@@ -1,4 +1,5 @@
 
+// ORIGINAL PROJECT MaktubDEV SorrisoBot
 var Twitter = require('twitter');
 
 require('dotenv').config()
@@ -28,18 +29,17 @@ var Tweet = new Twitter({
               console.log('deu erro no retweet:')
               console.log(err)
             }
-  
           }else {
             console.log('RETWEETADO: ',  `https://twitter.com/${Tweeter}/status/${TweetId}`)
           }
         })
       }else {
-        return 
+        return
       }
 
     }
 
-    var stream = Tweet.stream('statuses/filter', {track: 'Sorriso'})
+    var stream = Tweet.stream('statuses/filter', {track: 'egirl'})
 
     stream.on('data', retweet)
 
