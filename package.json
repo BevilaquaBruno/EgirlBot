@@ -1,11 +1,11 @@
 {
-  "name": "sorrisobot",
+  "name": "egirlbot",
   "version": "1.0.0",
   "description": "\"O melhor bot do Twitter\"",
   "main": "server.js",
   "scripts": {
     "test": "test ",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "bot",
